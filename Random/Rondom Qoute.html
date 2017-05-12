@@ -1,0 +1,102 @@
+<html>
+<style>
+#nama{
+	border-radius:35px;
+	font-size:30px;
+	text-align:center;
+	background-color:blue;
+	margin-left:200px;
+	color:white;
+	
+}
+#table{
+	background-color:;
+	border-style:dots;
+	 border:10px;
+	 border-color:black;
+	 width:700px;
+	 height:200px;
+	 background:transparent;
+}
+#submit{
+	margin-top:200px;
+	background-color:green;
+	width:200px;
+	height:40px;
+	border-radius:15px;
+	font-family:Times New Roman bold;
+	font-weight:bold;
+	
+}
+#name{
+	
+	margin-left:50%;
+}
+body{
+	background-color:#90EE90;
+}
+#butoontd{
+height:20px;
+border:0px;
+}
+#butoontd button{
+float:right;
+}
+button{
+width:80px;
+}
+#butoontd button:hover{
+background-color:white;
+width:90px;
+}
+a{
+text-decoration:none;
+}
+</style>
+<head>
+<script src="jquery-3.2.0.min.js"></script>
+<script >
+var anka=0;
+var anka1=4;
+	$(document).ready(function(){
+	var ankak=7;
+		$("#submit").click(function(warna,kata){
+		var warna=['#FF1493','#77B1A9','#FF00FF','#00CED1','#ADFF2F','#ADFF2F','#FFD700','#DAA520','#FB6964'];
+		var kata=['"Pada mulanya ada firman "','Pada mulanya Allah mencinptakan langit dan bumi',
+		'Tetaplah berdoa (galatia 1:1)','Hai pemalas pergilah kepada semut perhatikanlah lakunya dan jadilah bijak',
+		'Jangan membunuh','Jangan berzinah','jangan Mencuri','Ingatlah Dan Kuduskanlah hari Sabbath',
+		'Hormatilah Ayah dan Ibumu supaya lanjut umurmu'];
+		ankak--;
+		anka++;
+		if(anka==warna.length){
+			anka=0;
+			ankak=7;
+		}
+		
+		$('#nama').css('background-color',warna[anka]);
+		$('#nama').css('font-weight','bold');
+		$('#nama').css('color',warna[ankak]);
+		$('#nama').text(kata[anka]);
+		});
+	});
+	
+</script>
+</head>
+<body id="body">
+<center>
+<button id="submit">Rondom Quode</button><br>
+
+
+<table id="table" border="40px" >
+	<tr border=5px;>
+	<td id="nama" >
+	</td>
+	</tr>
+<tr>	
+<td id="butoontd"><button><a href="https://www.facebook.com/" target="blank"> FaceBook </a></button>
+<button><a href="https://twitter.com/intent/tweet?hashtags=quotes&text=%3Cp%3E%3Cem%3ECalvin:%3C/em%3E%20You%20can%92t%20just%20turn%20on%20creativity%20like%20a%20faucet.%20You%20have%20to%20be%20in%20the%20right%20mood.%3C/p%3E%3Cp%3E%3Cem%3EHobbes:%3C/em%3E%20What%20mood%20is%20that?%3C/p%3E%3Cp%3E%3Cem%3ECalvin:%3C/em%3E%20Last-minute%20panic." target="blank"> Twitter <a></button>
+</tr>
+</table>
+</center>
+</body>
+</html>
